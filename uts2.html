@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNINDRA</title>
+<style>
+  body {
+    background-color: yellow;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px;
+  }
+
+  .header img {
+    width: 90px;
+    height: auto;
+    margin-right: 25px;
+  }
+
+  .judul {
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .judul span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .alamat {
+    color: red;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: jalan 5s linear infinite alternate;
+    text-align: center;
+  }
+  @keyframes jalan {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(30px); }
+  }
+
+  hr {
+    height: 5px;
+    background-color: black;
+    border: none;
+    margin: 10px 100px;
+  }
+
+  table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    border: 3px double black;
+  }
+
+  td {
+    border: 3px double black;
+    padding: 8px 20px;
+  }
+
+  input {
+    border: none;
+    background-color: #fff;
+    width: 250px;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  button {
+    display: block;
+    margin: 10px auto;
+    padding: 6px 20px;
+    background-color: lightgray;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+  .list-container {
+    margin-top: 40px;
+    margin-left: 150px;
+    text-align: left;
+  }
+
+  .list-container b {
+    display: block;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="Logo UNINDRA">
+    <div>
+      <div class="judul">
+        UNIVERSITAS INDRAPRASTA PGRI
+        <span>(UNINDRA)</span>
+      </div>
+      <div class="alamat">Jl. Nangka No.58 Tanjung Barat - JakSel</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <td>Nama</td>
+      <td>:</td>
+      <td><input type="text" placeholder="Masukkan Nama Anda"></td>
+    </tr>
+    <tr>
+      <td>NPM</td>
+      <td>:</td>
+      <td><input type="text" placeholder="Masukkan NPM Anda"></td>
+    </tr>
+  </table>
+
+  <button>SIMPAN</button>
+
+  <div class="list-container">
+    <b>FTIK :</b>
+    A. Informatika<br>
+    B. Teknik Arsitektur<br>
+    C. Teknik Industri<br><br>
+
+    <b>MIPA :</b>
+    I. Matematika<br>
+    II. Fisika<br>
+    III. Biologi
+  </div>
+</body>
+</html>
